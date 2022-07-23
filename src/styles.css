@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#app {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playAgain {
+  width: 50%;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.5em;
+  background-color: rgb(117, 164, 235);
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s, opacity 1s;
+  pointer-events: none;
+}
+
+.playAgain:hover {
+  background-color: rgb(133, 179, 248);
+}
+
+.playAgain:active {
+  background-color: rgb(180, 210, 255);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+#score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+#choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85%;
+  gap: 15px;
+}
+
+#history {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  box-shadow: 0 2px 5px 2px rgba(1, 1, 1, 0.1);
+  border-radius: 3px;
+  font-size: 1.5em;
+}
+
+.choice {
+  border: none;
+  background-color: rgb(231, 231, 231);
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 2px 5px 2px rgba(1, 1, 1, 0.1);
+  border-radius: 3px;
+  font-size: 1.5em;
+}
+
+.message {
+  list-style-type: none;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+  font-weight: 200;
+}
+
+.choice:hover {
+  background-color: rgba(202, 212, 248, 0.15);
+}
+
+.choice:active {
+  background-color: rgba(130, 147, 210, 0.3);
+}

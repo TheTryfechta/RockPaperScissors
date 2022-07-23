@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="extra">
+        <button class="playAgain" id="playAgain">
+          Play Again? <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+        <div id="score">
+          <div id="playerScore">Player: 0</div>
+          <div id="pcScore">PC: 0</div>
+        </div>
+      </div>
+      <div id="choices">
+        <button class="choice" id="rock">
+          Rock <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button class="choice" id="paper">
+          Paper <i class="fa-solid fa-hand"></i>
+        </button>
+        <button class="choice" id="scissors">
+          Scissors <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div id="history">
+        <ul id="messages"></ul>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
